@@ -1,0 +1,9 @@
+account	email	phone	service_address	city	route	monthly_value
+Greenview Office	manager@greenview.example	555-0101	125 Main St	Denver	Q1 Core	725
+Northside Plaza		555-0134	411 Oak Ave	Arvada	North Route	1140
+Valley Suites	admin@valleysuites.example	555-0150		Lakewood	Q2 West	930
+Parkview Center	owner@parkview.example	555-0177	90 Park Lane	Denver	Q1 Core	520
+Parkview Annex	owner@parkview.example	555-0177	94 Park Lane	Denver	Q1 Core	380
+Summit Dental	frontdesk@summit.example	555-0198	601 Summit Dr	Boulder	North Route	640
+Oak Ridge Shops	ops@oakridge.example		800 Ridge Rd	Aurora	East Route	1350
+Civic Lofts		555-0123	10 Civic Way	Denver		460
