@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Perception | Service Command Center</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav">
+      <a class="brand" href="/"><span class="mark"></span><span>Service Command Center</span></a>
+      <div class="nav-links">
+        <a href="/">Mission</a>
+        <a href="/accounts">Account Perception</a>
+        <a href="/evaluation">Evaluation</a>
+        <a href="/funnel">Funnel System</a>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Before the upload</div>
+            <h2>Your customer file can be perceived in more than one useful way.</h2>
+          </div>
+          <p>Before you enter a customer.xls file, Service Command Center helps you understand what the file may become: a route map, a cleanup queue, a survey list, and a growth signal.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card">
+            <span class="tag blue">Operational</span>
+            <h3>Who needs attention?</h3>
+            <p>Accounts can be sorted into ready, pending, problem, opportunity, and manager-review groups.</p>
+          </article>
+          <article class="card">
+            <span class="tag green">Territory</span>
+            <h3>Where does work cluster?</h3>
+            <p>Accounts can be viewed by route group, city, service area, technician, or quarter.</p>
+          </article>
+          <article class="card">
+            <span class="tag gold">Relationship</span>
+            <h3>Who represents multiple accounts?</h3>
+            <p>Shared emails can reveal property managers, multi-location contacts, and outreach risks.</p>
+          </article>
+          <article class="card">
+            <span class="tag red">Cleanup</span>
+            <h3>What is missing?</h3>
+            <p>Missing emails, addresses, phones, unclear locations, and duplicates become a review list.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section grid-2">
+        <div class="upload-zone">
+          <div>
+            <div class="eyebrow">Customer.xls intake</div>
+            <h2>Upload your customer file or use the sample review.</h2>
+            <p class="lead">Prototype supports CSV/TSV-style uploads now and accepts .xls/.xlsx files visually for the customer flow. Spreadsheet parsing can be upgraded in the production build.</p>
+          </div>
+          <label>Customer file
+            <input id="customerFile" type="file" accept=".csv,.tsv,.txt,.xls,.xlsx">
+          </label>
+          <button class="button secondary" id="sampleEvaluate" type="button">Run sample customer evaluation</button>
+          <p class="fine">Expected columns: account, email, phone, service address, city, route, monthly value.</p>
+        </div>
+
+        <div class="dashboard">
+          <div class="metric-grid">
+            <div class="metric"><strong>126</strong><span>Potential active accounts</span></div>
+            <div class="metric"><strong>31</strong><span>Survey-ready contacts</span></div>
+            <div class="metric"><strong>18</strong><span>Cleanup items</span></div>
+            <div class="metric"><strong>4</strong><span>Route groups</span></div>
+          </div>
+          <div class="card">
+            <h3>Complimentary account perception examples</h3>
+            <ul>
+              <li>Which route should receive survey outreach first?</li>
+              <li>Which accounts have enough information to contact today?</li>
+              <li>Which contacts appear across multiple service locations?</li>
+              <li>Which customer records need owner or manager review?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

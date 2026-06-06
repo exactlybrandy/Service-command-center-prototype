@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Command Center</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav">
+      <a class="brand" href="/"><span class="mark"></span><span>Service Command Center</span></a>
+      <div class="nav-links">
+        <a href="/">Mission</a>
+        <a href="/accounts">Account Perception</a>
+        <a href="/evaluation">Evaluation</a>
+        <a href="/funnel">Funnel System</a>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Mission statement</div>
+          <h1>Most software stores customer information. Service Command Center interprets it.</h1>
+          <p class="lead">We help route-based service businesses turn customer exports, invoices, route notes, and scattered account data into operational intelligence owners can act on.</p>
+          <div class="actions">
+            <a class="button" href="/accounts">See how your accounts can be read</a>
+            <a class="button secondary" href="/funnel">View the customer targeting system</a>
+          </div>
+        </div>
+
+        <form class="signup-box" id="signupForm">
+          <div>
+            <div class="eyebrow">Customer signup</div>
+            <h2>Start with a customer-base review.</h2>
+            <p class="lead">First 2 months free at signup. Then one recurring monthly fee.</p>
+          </div>
+
+          <div class="price">
+            <div>
+              <strong>$250/mo</strong>
+              <div class="fine">One monthly recurring fee after the first 2 months free. No tiered plan wall.</div>
+            </div>
+            <span class="tag green">2 months free</span>
+          </div>
+
+          <label>Business name
+            <input name="businessName" placeholder="Greenview Plant Care" required>
+          </label>
+          <label>Business type
+            <select name="businessType" required>
+              <option value="">Choose one</option>
+              <option>Cleaning company</option>
+              <option>Interior plant care</option>
+              <option>Pest control</option>
+              <option>Landscaping / lawn care</option>
+              <option>HVAC / plumbing / electrical</option>
+              <option>Property service vendor</option>
+              <option>Other route-based service</option>
+            </select>
+          </label>
+          <label>Email
+            <input name="email" type="email" placeholder="owner@example.com" required>
+          </label>
+          <label>What feels messy right now?
+            <textarea name="pain" placeholder="Customer exports, route groups, missing emails, follow-ups, old accounts..."></textarea>
+          </label>
+          <button class="button" type="submit">Start first 2 months free</button>
+          <div id="signupMessage"></div>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
