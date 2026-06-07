@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Mockup | Service Command Center</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav">
+      <a class="brand" href="/"><span class="mark"></span><span>Service Command Center</span></a>
+      <div class="nav-links">
+        <a href="/">Mission</a>
+        <a href="/accounts">Account Perception</a>
+        <a href="/evaluation">Evaluation</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/funnel">Funnel System</a>
+      </div>
+    </nav>
+
+    <main class="dashboard-page">
+      <section class="analysis-header">
+        <div>
+          <div class="eyebrow">Analysis run · Today · 247 accounts processed</div>
+          <h1>Alpine Pest Control</h1>
+          <p>Customer data has been normalized, assigned to territories, scored for outreach readiness, and translated into owner-level next actions.</p>
+        </div>
+        <div class="analysis-actions">
+          <a class="button secondary" href="/accounts">New upload</a>
+          <button class="button" type="button">Download report</button>
+        </div>
+      </section>
+
+      <section class="analysis-flow" aria-label="Analysis progress">
+        <div class="flow-step complete"><span>1</span>Upload</div>
+        <div class="flow-step complete"><span>2</span>Confirm columns</div>
+        <div class="flow-step complete"><span>3</span>Assign territories</div>
+        <div class="flow-step active"><span>4</span>Review actions</div>
+      </section>
+
+      <section class="insight-strip" aria-label="Executive scores">
+        <article class="insight-tile">
+          <span class="tag green">Data quality score</span>
+          <strong>74</strong>
+          <p>14 accounts need attention before outreach.</p>
+        </article>
+        <article class="insight-tile">
+          <span class="tag gold">Territory opportunity</span>
+          <strong>82</strong>
+          <p>Southwest territory appears underdeveloped.</p>
+        </article>
+        <article class="insight-tile">
+          <span class="tag red">Missing contacts</span>
+          <strong>31</strong>
+          <p>Missing email or phone before campaign.</p>
+        </article>
+        <article class="insight-tile">
+          <span class="tag blue">Relationship clusters</span>
+          <strong>3</strong>
+          <p>Shared email domains worth reviewing.</p>
+        </article>
+      </section>
+
+      <section class="command-layout">
+        <article class="territory-panel">
+          <div class="panel-head">
+            <div>
+              <span class="tag green">Territory map</span>
+              <h2>HQ: 847 S Main St</h2>
+            </div>
+            <p>4 zones assigned</p>
+          </div>
+          <div class="premium-map" aria-label="Territory map mockup">
+            <div class="map-axis horizontal"></div>
+            <div class="map-axis vertical"></div>
+            <div class="map-hq">HQ</div>
+            <div class="zone zone-ne">NE · 89</div>
+            <div class="zone zone-nw">NW · 41</div>
+            <div class="zone zone-sw">SW · 34</div>
+            <div class="zone zone-se">SE · 83</div>
+            <span class="map-pin pin-a"></span>
+            <span class="map-pin pin-b"></span>
+            <span class="map-pin pin-c"></span>
+            <span class="map-pin pin-d"></span>
+            <span class="map-pin pin-e"></span>
+            <span class="map-pin pin-f"></span>
+          </div>
+        </article>
+
+        <article class="territory-table-panel">
+          <div class="panel-head">
+            <div>
+              <span class="tag gold">Territory health</span>
+              <h2>Where the base is strong or thin</h2>
+            </div>
+          </div>
+          <table class="table premium-table">
+            <thead><tr><th>Territory</th><th>Accounts</th><th>Health</th><th>Opportunity</th></tr></thead>
+            <tbody>
+              <tr><td>Northeast</td><td>89</td><td>87</td><td>44</td></tr>
+              <tr><td>Southeast</td><td>83</td><td>71</td><td>52</td></tr>
+              <tr><td>Northwest</td><td>41</td><td>58</td><td>78</td></tr>
+              <tr><td>Southwest</td><td>34</td><td>44</td><td>82</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section class="action-report">
+        <article class="recommendations-panel">
+          <div class="panel-head">
+            <div>
+              <span class="tag red">Recommended actions</span>
+              <h2>Top 3 things to do first</h2>
+            </div>
+            <p>Owner-ready</p>
+          </div>
+          <ol class="action-list">
+            <li>
+              <span class="priority high">High</span>
+              <div>
+                <h3>Clean 9 missing service addresses</h3>
+                <p>Territory routing is unreliable for these accounts until addresses are confirmed.</p>
+              </div>
+            </li>
+            <li>
+              <span class="priority medium">Medium</span>
+              <div>
+                <h3>Review shared contact across 3 accounts</h3>
+                <p>greystarprops.com appears across 3 accounts. Assign one contact owner before outreach.</p>
+              </div>
+            </li>
+            <li>
+              <span class="priority growth">Growth</span>
+              <div>
+                <h3>Investigate Southwest expansion</h3>
+                <p>34 accounts vs 89 in Northeast. Density and radius suggest room for focused growth.</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="review-panel">
+          <div class="panel-head">
+            <div>
+              <span class="tag blue">Data quality review</span>
+              <h2>Score: 74/100</h2>
+            </div>
+          </div>
+          <div class="quality-list">
+            <div><span>Missing service address</span><strong>9</strong></div>
+            <div><span>Missing email</span><strong>18</strong></div>
+            <div><span>Missing phone</span><strong>13</strong></div>
+            <div><span>Shared email contacts</span><strong>3</strong></div>
+            <div><span>Accounts ready for outreach</span><strong>204</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="strategic-report">
+        <article>
+          <span class="tag gold">P5 strategic intelligence</span>
+          <h2>Customer niche breakdown</h2>
+          <div class="niche-bars">
+            <div><span>Property Management</span><strong>84 accounts · 34%</strong><i style="--bar: 34%"></i></div>
+            <div><span>Corporate Office</span><strong>61 accounts · 25%</strong><i style="--bar: 25%"></i></div>
+            <div><span>Hospitality</span><strong>42 accounts · 17%</strong><i style="--bar: 17%"></i></div>
+            <div><span>Unknown / Needs Review</span><strong>60 accounts · 24%</strong><i style="--bar: 24%"></i></div>
+          </div>
+        </article>
+        <article>
+          <span class="tag green">Strategic findings</span>
+          <h2>What leadership should notice</h2>
+          <div class="finding-list">
+            <p><strong>Strongest niche:</strong> Property Management represents 34% of analyzed accounts, your most developed segment.</p>
+            <p><strong>Territory opportunity:</strong> Southwest has the highest opportunity score at 82/100 and appears underdeveloped.</p>
+            <p><strong>Blind spot:</strong> 24% of accounts could not be classified. Clean company names and notes before making niche decisions.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
